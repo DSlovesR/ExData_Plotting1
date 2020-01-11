@@ -1,15 +1,19 @@
+# set working foler
 setwd("D:\\DS\\DS-R\\Course4\\Week1")
 
 
-
+#load data
 source(".//plotData.R")
 
 #set plot width and height as requested
 # change default unit to pixel from inch
+#plot 3
 
 png( ".//plot3.png", width= 480, height=480, units = "px")
 
-#plot 3
+
+# plot three data points on same X axis
+# and print data point name in legend
 plot(
    pDS$datetime,
    pDS$Sub_metering_1 ,
