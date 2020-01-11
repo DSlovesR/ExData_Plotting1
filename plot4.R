@@ -1,14 +1,18 @@
+#set working folder
 setwd("D:\\DS\\DS-R\\Course4\\Week1")
 
+#load data
 source(".//plotData.R")
 
 
 #set plot width and height as requested
 # change default unit to pixel from inch
+#plot 4
 
 png( ".//plot4.png", width= 480, height=480, units = "px")
 
-#plot 4
+# plot 4 chart on same device using par()
+
 par(mfrow = c(2, 2))
 
 #1
